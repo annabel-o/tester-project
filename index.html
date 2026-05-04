@@ -1,0 +1,219 @@
+
+<body>
+  
+  <nav></nav>
+  <main></main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/gh/netizenorg/netnet-standard-library/build/nn.min.js"></script>
+
+<script>
+/*global nn*/ 
+  
+  const comments = [
+    'mid',
+    'try again'
+    'be serious'
+    'that was a choice'
+    'are you done?'
+    'bold of you'
+    'interesting...'
+    'delete this'
+    'next time try'
+    'are you sure about that?'
+  ]
+
+  function draw (){
+    if (!nn.mouseDown) return
+    
+    //normal drawing dot
+    nn.create('div')
+    .content('●')
+    .positionOrigin ('center')
+    .position(nn.mouseX, nn.mouseY)
+    .css({
+      position: 'absolute',
+      fontSize: '18px',
+      pointerEvents: 'none'
+    })
+    .addTo('main')
+    
+    //if sometimes add ragebait comment
+    if (math.random() < 0.03 {
+        const randomComment = comments[Math.floor(Math.random()*comments.length)]
+       nn.create('div')
+    .content(randomComment)
+    .position(nn.mouseX + 20, nn.mouseY)
+    .css({
+      position: 'absolute',
+      background: 'yellow',
+      border: '2px solid black',
+      padding: '5px',
+      fontFamily: 'monospace',
+      pointerEvents: 'none'
+         
+       })
+  
+    .addTo('main')
+  }
+  
+  nn.create('button')
+  .content('save?')
+  .addTo('nav')
+  .on('click', function (){
+    alert('are you sure this is worth saving?')
+  })
+nn.on('mousemove', draw)  
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
